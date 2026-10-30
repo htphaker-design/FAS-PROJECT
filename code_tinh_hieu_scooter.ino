@@ -35,7 +35,7 @@
 #define FRAME_LEN        5
 
 // --- CẤU HÌNH THỜI GIAN (NON-BLOCKING MILLIS) ---
-const unsigned long DURATION_20S       = 120000UL; // Thời gian kích chân 11: 20 giây
+const unsigned long DURATION_20S       = 60000UL; // Thời gian kích chân 11: 20 giây
 const unsigned long DURATION_3S        = 5000UL;  // Thời gian kích chân 12: 3 giây
 const unsigned long BLINK_HALF_PERIOD  = 500UL;   // Đèn chân 22 chớp tắt chu kỳ 1s (500ms Sáng + 500ms Tắt)
 const unsigned long HEARTBEAT_INTERVAL = 2000UL;  // Chu kỳ phát gói dò sóng: 2 giây
@@ -49,7 +49,6 @@ const uint8_t       MAX_RETRIES        = 5;       // Số lần phát lại tố
 
 const bool TRIGGER_PIN12_BOTH_SIDES = true;
 
-// --- BIẾN QUẢN LÝ CHÂN 11 (20S) & CHÂN 12 (3S) ---
 bool isPin11Active = false;
 unsigned long pin11StartTime = 0;
 
